@@ -1,0 +1,12 @@
+name: CNN
+
+
+
+entry_points:
+  main:
+    parameters:
+      kernel1: {type: int, default: 3}
+      kernel2: {type: int, default: 3}
+      kernel3: {type: int, default: 3}
+      epochs: {type: int, default: 10}
+    command: "python notebook.ipynb {kernel1} {kernel2} {kernel3} {epochs}"
